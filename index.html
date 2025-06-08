@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fortnite News GR</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header, nav, section, footer {
+      padding: 2rem;
+    }
+    header {
+      background-color: #1e1e1e;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      margin-bottom: 0.2rem;
+    }
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #00ffff;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #66ffff;
+    }
+    .news-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .news-card {
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+      overflow: hidden;
+    }
+    .news-card img {
+      width: 100%;
+      display: block;
+      border-radius: 8px 8px 0 0;
+    }
+    .news-card h2 {
+      margin: 1rem;
+      font-size: 1.3rem;
+      color: #00ffff;
+    }
+    .news-card p {
+      margin: 0 1rem 1rem 1rem;
+      color: #ccc;
+    }
+    section {
+      background-color: #181818;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+    section h2 {
+      margin-top: 0;
+      color: #00ffff;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #00ffff;
+    }
+    section p, section a {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    section a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
+    }
+    .social-media {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .social-media a {
+      margin: 0 1rem;
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #00ffff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fortnite News GR</h1>
+    <p>Τα πιο πρόσφατα νέα, leaks και events του Fortnite!</p>
+  </header>
+
+  <nav>
+    <a href="#news">Νέα</a>
+    <a href="#video">Trailer</a>
+    <a href="#strategy">Στρατηγικές</a>
+    <a href="#weapons">Όπλα</a>
+    <a href="#patches">Patch Notes</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#tournaments">Τουρνουά</a>
+    <a href="#funfacts">Fun Facts</a>
+    <a href="#reviews">Αξιολογήσεις</a>
+    <a href="#contact">Επικοινωνία</a>
+  </nav>
+
+  <section id="news" class="news-section">
+    <h2 class="section-title">📰 Τελευταία Νέα</h2>
+    <article class="news-card">
+      <img src="https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv20-50-release%2Ffn-v20-50-social-news-1920x1080-1920x1080-302ddbb6ff9a5f537dbe3826e33c15c5565d29e8.jpg" alt="Fortnite Νέα" />
+      <h2>Νέα Ενημέρωση v20.50</h2>
+      <p>Η νέα ενημέρωση φέρνει βελτιώσεις στο gameplay και νέα skins!</p>
+    </article>
+    <article class="news-card">
+      <img src="https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fchapter-5-season-2-hero-1920x1080-1920x1080-82b1f3ac70e2f30d3bfda39527ee57f6e4e3068c.jpg" alt="Νέο Κεφάλαιο" />
+      <h2>Κεφάλαιο 5 - Σεζόν 2 Ξεκίνησε</h2>
+      <p>Μάθε πρώτος όλα τα νέα γεγονότα της σεζόν 2 στο Κεφάλαιο 5.</p>
+    </article>
+  </section>
+
+  <section id="video" class="video-section">
+    <h2>🎬 Fortnite Trailer </h2>
+    <iframe src="https://www.youtube.com/embed/X_zzh-g2a4M" title="Fortnite Trailer" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="strategy" class="strategy-section">
+    <h2>🎯 Στρατηγικές</h2>
+    <p>Προτάσεις για solos, squads και arena gameplay. Δες <a href="https://www.epicgames.com/fortnite/en-US/news/competitive-guide">εδώ τον επίσημο οδηγό στρατηγικών</a>.</p>
+  </section>
+
+  <section id="weapons" class="weapons-section">
+    <h2>🔫 Όπλα</h2>
+    <p>Ανάλυση όλων των κατηγοριών όπλων του παιχνιδιού και τα στατιστικά τους. Περισσότερα στο <a href="https://fortnite.gg/weapons">fortnite.gg</a>.</p>
+  </section>
+
+  <section id="patches" class="patch-notes-section">
+    <h2>📝 Patch Notes</h2>
+    <p>Επίσημα σημειώματα αλλαγών κάθε ενημέρωσης. Δες όλα τα patch notes στο <a href="https://www.epicgames.com/fortnite/en-US/news">επίσημο site της Epic Games</a>.</p>
+  </section>
+
+  <section id="quiz" class="quiz-section">
+    <h2>❓ Fortnite Quiz</h2>
+    <p>Δοκίμασε τις γνώσεις σου για το Fortnite με τα παρακάτω quiz:</p>
+    <ul>
+      <li><a href="https://www.proprofs.com/quiz-school/topic/fortnite" target="_blank" rel="noopener">ProProfs Fortnite Quiz</a></li>
+      <li><a href="https://www.quizony.com/fortnite-quiz.html" target="_blank" rel="noopener">Quizony Fortnite Quiz</a></li>
+      <li><a href="https://www.funtrivia.com/quizzes/video_games/fortnite.html" target="_blank" rel="noopener">FunTrivia Fortnite Quiz</a></li>
+    </ul>
+  </section>
+
+  <section id="tournaments" class="tournaments-section">
+    <h2>🏆 Τουρνουά</h2>
+    <p>Συμμετοχές, ημερομηνίες και έπαθλα για τα fan-made τουρνουά μας. Μάθε περισσότερα στο <a href="https://www.epicgames.com/fortnite/competitive/events" target="_blank" rel="noopener">επίσημο site των events</a>.</p>
+  </section>
+
+  <section id="funfacts" class="fun-facts-section">
+    <h2>🎉 Fun Facts</h2>
+    <p>Μάθε απίθανα trivia για το παιχνίδι, τους χαρακτήρες και τα skins! Διάβασε περισσότερα στο <a href="https://fortnite.gg/fun-facts" target="_blank" rel="noopener">fortnite.gg fun facts</a>.</p>
+  </section>
+
+  <section id="reviews" class="reviews-section">
+    <h2>⭐ Αξιολογήσεις</h2>
+    <p>Διάβασε reviews για τα πιο πρόσφατα updates και skins. Μερικά links:</p>
+    <ul>
+      <li><a href="https://www.metacritic.com/game/pc/fortnite" target="_blank" rel="noopener">Metacritic Fortnite Reviews</a></li>
+      <li><a href="https://www.ign.com/games/fortnite" target="_blank" rel="noopener">IGN Fortnite Reviews</a></li>
+      <li><a href="https://www.gamespot.com/games/fortnite/reviews/" target="_blank" rel="noopener">Gamespot Fortnite Reviews</a></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Επικοινωνία</h2>
+    <p>Μπορείς να μας στείλεις email στο <strong>info.fortnitenewsgr@gmail.com</strong>.</p>
+    <p>Ακολούθησέ μας στο Instagram: <strong>@fortnitenewsgr_</strong></p>
+  </section>
+
+  <footer>
+    Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games<br />
+    © 2025 Fortnite News GR
+  </footer>
+</body>
+</html>
