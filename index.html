@@ -1,90 +1,51 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fortnite News GR</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #111;
+      margin: 0; padding: 0;
+      background: #0e0e0e;
       color: #fff;
-      margin: 0;
-      padding: 0;
     }
-
-    header {
-      background-color: #1a1a1a;
+    header, footer {
+      background-color: #202020;
       padding: 20px;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+    h1, h2 {
+      color: #00dcff;
     }
-
     section {
-      padding: 30px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-
-    h2 {
-      color: #00bfff;
-    }
-
-    .link-button {
+    .btn {
       display: inline-block;
-      margin: 10px 5px;
+      margin-top: 10px;
       padding: 10px 15px;
-      background-color: #00bfff;
+      background-color: #00dcff;
       color: #000;
       text-decoration: none;
       border-radius: 5px;
     }
-
-    .trailer iframe {
-      width: 100%;
-      max-width: 700px;
-      height: 400px;
-      margin: 0 auto;
-      display: block;
-      border-radius: 12px;
+    .feature-card {
+      margin-bottom: 30px;
     }
-
-    .news-card {
-      background-color: #222;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
-
-    .news-card img {
+    iframe {
       max-width: 100%;
-      border-radius: 10px;
     }
-
     .contact {
-      background-color: #1a1a1a;
+      background: #151515;
       padding: 20px;
-      margin-top: 30px;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #000;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
       margin-top: 40px;
     }
-
-    a {
-      color: #00bfff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    footer small {
+      color: #888;
     }
   </style>
 </head>
@@ -92,63 +53,64 @@
 
   <header>
     <h1>Καλώς ήρθατε στο Fortnite News GR</h1>
+    <p>Τα πάντα για το Fortnite σε έναν fan-made ιστότοπο!</p>
   </header>
 
-  <section class="trailer">
+  <section>
     <h2>🎬 Fortnite Trailer</h2>
-    <iframe src="https://www.youtube.com/embed/X_zzh-g2a4M" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/X_zzh-g2a4M" title="Fortnite Trailer" allowfullscreen></iframe>
   </section>
 
-  <section id="features">
-    <h2>🎯 Στρατηγικές</h2>
-    <p>Προτάσεις για solos, squads και arena gameplay.</p>
-    <a class="link-button" href="https://fortnite.fandom.com/wiki/Strategy_Guide">Δες όλες τις στρατηγικές</a>
+  <section>
+    <h2>📌 Περιεχόμενο</h2>
 
-    <h2>🔫 Όπλα</h2>
-    <p>Ανάλυση όλων των κατηγοριών όπλων του παιχνιδιού και τα στατιστικά τους.</p>
-    <a class="link-button" href="https://fortnite.gg/weapons">Πλήρης λίστα όπλων</a>
+    <article class="feature-card">
+      <h3>🎯 Στρατηγικές</h3>
+      <p>Προτάσεις για solos, squads και arena gameplay.</p>
+      <a href="https://fortnite-news-gr.github.io/fortnitenewsgr/strategies.html" class="btn">Δες όλες τις στρατηγικές</a>
+    </article>
 
-    <h2>📝 Patch Notes</h2>
-    <p>Επίσημα σημειώματα αλλαγών κάθε ενημέρωσης.</p>
-    <a class="link-button" href="https://www.epicgames.com/fortnite/en-US/news">Δες όλα τα patch notes</a>
+    <article class="feature-card">
+      <h3>🔫 Όπλα</h3>
+      <p>Ανάλυση όλων των κατηγοριών όπλων του παιχνιδιού και τα στατιστικά τους.</p>
+      <a href="https://fortnite-news-gr.github.io/fortnitenewsgr/weapons.html" class="btn">Πλήρης λίστα όπλων</a>
+    </article>
 
-    <h2>❓ Fortnite Quiz</h2>
-    <p>Δοκίμασε τις γνώσεις σου για το Fortnite με το διασκεδαστικό μας quiz!</p>
-    <a class="link-button" href="https://fortnite-quiz.com">Κάνε το quiz</a>
+    <article class="feature-card">
+      <h3>📝 Patch Notes</h3>
+      <p>Επίσημα σημειώματα αλλαγών κάθε ενημέρωσης.</p>
+      <a href="https://fortnite-news-gr.github.io/fortnitenewsgr/patch-notes.html" class="btn">Δες όλα τα patch notes</a>
+    </article>
 
-    <h2>🏆 Τουρνουά</h2>
-    <p>Συμμετοχές, ημερομηνίες και έπαθλα για τα fan-made τουρνουά μας.</p>
-    <a class="link-button" href="https://fortnitetournaments.com">Δες όλα τα τουρνουά</a>
+    <article class="feature-card">
+      <h3>❓ Fortnite Quiz</h3>
+      <p>Δοκίμασε τις γνώσεις σου για το Fortnite με το διασκεδαστικό μας quiz!</p>
+      <a href="https://fortnite-news-gr.github.io/fortnitenewsgr/quiz.html" class="btn">Κάνε το quiz</a>
+    </article>
 
-    <h2>🎉 Fun Facts</h2>
-    <p>Μάθε απίθανα trivia για το παιχνίδι, τους χαρακτήρες και τα skins!</p>
-    <a class="link-button" href="https://www.thegamer.com/fortnite-fun-facts/">Δες περισσότερα Fun Facts</a>
+    <article class="feature-card">
+      <h3>🏆 Τουρνουά</h3>
+      <p>Συμμετοχές, ημερομηνίες και έπαθλα για τα fan-made τουρνουά μας.</p>
+      <a href="https://fortnite-news-gr.github.io/fortnitenewsgr/tournaments.html" class="btn">Δες όλα τα τουρνουά</a>
+    </article>
 
-    <h2>🔧 Changelog</h2>
-    <p>Τελευταίες ενημερώσεις και βελτιώσεις στον ιστότοπό μας.</p>
-    <a class="link-button" href="https://github.com/Fortnite-News-GR/fortnitenewsgr/commits/main">Πλήρες changelog</a>
-  </section>
+    <article class="feature-card">
+      <h3>🎉 Fun Facts</h3>
+      <p>Μάθε απίθανα trivia για το παιχνίδι, τους χαρακτήρες και τα skins!</p>
+      <a href="https://fortnite-news-gr.github.io/fortnitenewsgr/fun-facts.html" class="btn">Δες περισσότερα Fun Facts</a>
+    </article>
 
-  <section id="news" class="news-section">
-    <h2>📰 Τελευταία Νέα</h2>
-
-    <div class="news-card">
-      <img src="https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fv20-50-release%2Ffn-v20-50-social-news-1920x1080-1920x1080-302ddbb6ff9a5f537dbe3826e33c15c5565d29e8.jpg" alt="Fortnite Νέα">
-      <h3>Νέα Ενημέρωση v20.50</h3>
-      <p>Η νέα ενημέρωση φέρνει βελτιώσεις στο gameplay και νέα skins!</p>
-    </div>
-
-    <div class="news-card">
-      <img src="https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fchapter-5-season-2-hero-1920x1080-1920x1080-82b1f3ac70e2f30d3bfda39527ee57f6e4e3068c.jpg" alt="Νέο Κεφάλαιο">
-      <h3>Κεφάλαιο 5 - Σεζόν 2 Ξεκίνησε</h3>
-      <p>Μάθε πρώτος όλα τα νέα γεγονότα της σεζόν 2 στο Κεφάλαιο 5.</p>
-    </div>
+    <article class="feature-card">
+      <h3>🔧 Changelog</h3>
+      <p>Τελευταίες ενημερώσεις και βελτιώσεις στον ιστότοπό μας.</p>
+      <a href="https://fortnite-news-gr.github.io/fortnitenewsgr/changelog.html" class="btn">Πλήρες changelog</a>
+    </article>
   </section>
 
   <section class="contact">
     <h2>📬 Επικοινωνία</h2>
     <p>📧 Email: <a href="mailto:info.fortnitenewsgr@gmail.com">info.fortnitenewsgr@gmail.com</a></p>
-    <p>📸 Instagram: <a href="https://www.instagram.com/fortnitenewsgr_/" target="_blank">@fortnitenewsgr_</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/fortnitenewsgr_" target="_blank">@fortnitenewsgr_</a></p>
   </section>
 
   <footer>
