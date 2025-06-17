@@ -2,47 +2,60 @@
 <html lang="el">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fortnite News GR</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #0d1117;
-      color: #ffffff;
+      background: #111;
+      color: #fff;
     }
     header {
-      background-color: #1f2937;
+      background: #1e1e1e;
       padding: 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 2.5rem;
     }
     section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+    .news-card, .update-card {
+      background: #222;
       padding: 20px;
-      border-bottom: 1px solid #333;
+      margin-bottom: 20px;
+      border-radius: 8px;
     }
-    h2 {
-      color: #4ade80;
-    }
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-    .video {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 10px;
     }
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #1f2937;
-      font-size: 0.9em;
-      color: #888;
+      background: #1a1a1a;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -50,80 +63,99 @@
 
   <header>
     <h1>Καλώς ήρθατε στο Fortnite News GR</h1>
-    <p>Όλα τα νέα, στρατηγικές και ενημερώσεις για το Fortnite!</p>
   </header>
 
-  <section>
-    <h2>🎯 Στρατηγικές</h2>
-    <p>Προτάσεις για Solos, Squads και Arena gameplay για όλους τους παίκτες.</p>
-    <a href="#">Μάθε περισσότερα</a>
+  <section id="trailer">
+    <h2 class="section-title">▶️ Fortnite Trailer</h2>
+    <iframe src="https://www.youtube.com/embed/W1efBShp1Jc" title="Fortnite Trailer" allowfullscreen></iframe>
   </section>
 
-  <section>
-    <h2>🔫 Όπλα</h2>
-    <p>Αναλυτικός οδηγός για όλες τις κατηγορίες όπλων και τα στατιστικά τους.</p>
-    <a href="#">Πλήρης λίστα όπλων</a>
+  <section id="strategies">
+    <h2 class="section-title">🎯 Στρατηγικές</h2>
+    <p>Προτάσεις και συμβουλές για Solos, Squads και Arena gameplay.</p>
+    <p><a href="#">Δες όλες τις στρατηγικές</a></p>
   </section>
 
-  <section>
-    <h2>📝 Patch Notes</h2>
-    <p>Όλες οι τελευταίες αλλαγές και ενημερώσεις του Fortnite συγκεντρωμένες.</p>
-    <a href="#">Δες όλα τα patch notes</a>
+  <section id="weapons">
+    <h2 class="section-title">🔫 Όπλα</h2>
+    <p>Αναλυτική λίστα όλων των κατηγοριών όπλων και τα στατιστικά τους.</p>
+    <p><a href="#">Πλήρης λίστα όπλων</a></p>
   </section>
 
-  <section>
-    <h2>❓ Fortnite Quiz</h2>
-    <p>Δοκίμασε τις γνώσεις σου για το Fortnite με ένα διασκεδαστικό quiz!</p>
-    <a href="#">Κάνε το quiz</a>
+  <section id="patch-notes">
+    <h2 class="section-title">📝 Patch Notes</h2>
+    <p>Επίσημα σημειώματα αλλαγών από κάθε ενημέρωση του Fortnite.</p>
+    <p><a href="#">Δες όλα τα patch notes</a></p>
   </section>
 
-  <section>
-    <h2>🏆 Τουρνουά</h2>
-    <p>Δες τα fan-made τουρνουά μας και πώς να συμμετάσχεις!</p>
-    <a href="#">Δες όλα τα τουρνουά</a>
+  <section id="quiz">
+    <h2 class="section-title">❓ Fortnite Quiz</h2>
+    <p>Δοκίμασε τις γνώσεις σου για το Fortnite με το διασκεδαστικό μας quiz!</p>
+    <p><a href="#">Κάνε το quiz</a></p>
   </section>
 
-  <section>
-    <h2>🎉 Fun Facts</h2>
-    <p>Απίθανα trivia για χαρακτήρες, το lore και το gameplay του Fortnite.</p>
-    <a href="https://fortnite.fandom.com/wiki/Fortnite_Wiki" target="_blank">Δες περισσότερα Fun Facts</a>
+  <section id="tournaments">
+    <h2 class="section-title">🏆 Τουρνουά</h2>
+    <p>Συμμετοχές, ημερομηνίες και έπαθλα για τα fan-made τουρνουά μας.</p>
+    <p><a href="#">Δες όλα τα τουρνουά</a></p>
   </section>
 
-  <section>
-    <h2>▶️ Fortnite Trailer</h2>
-    <div class="video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/X_zzh-g2a4M" 
-        title="Fortnite Trailer" frameborder="0" allowfullscreen></iframe>
-    </div>
+  <section id="fun-facts">
+    <h2 class="section-title">🎉 Fun Facts</h2>
+    <p>Μάθε απίθανα trivia για το παιχνίδι, τους χαρακτήρες και τις σεζόν του Fortnite!</p>
+    <p><a href="https://fortnite.fandom.com/wiki/Fortnite_Wiki" target="_blank">Δες περισσότερα Fun Facts</a></p>
   </section>
 
-  <section>
-    <h2>💡 Οδηγός για Αρχάριους</h2>
-    <p>Ξεκινάς τώρα το Fortnite; Διάβασε τις βασικές οδηγίες για αρχάριους!</p>
-    <a href="#">Δες τον οδηγό</a>
+  <section id="latest-updates">
+    <h2 class="section-title">🆕 Τελευταίες Ενημερώσεις</h2>
+
+    <article class="update-card">
+      <h3>🧪 Leaks: Weapon Mastery & Ranked Shops</h3>
+      <p>Σύμφωνα με διαρροές, έρχονται νέες δυνατότητες όπως weapon mastery και ειδικά καταστήματα για ranked mode!</p>
+    </article>
+
+    <article class="update-card">
+      <h3>🎮 Fortnite στο Switch 2</h3>
+      <p>Το παιχνίδι πλέον υποστηρίζει 60fps, GameChat και έλεγχο με ποντίκι στο Switch 2!</p>
+    </article>
+
+    <article class="update-card">
+      <h3>🔧 Nerf: Bass Boost</h3>
+      <p>Το item Bass Boost δέχθηκε σοβαρό nerf, προκαλώντας αντιδράσεις από την κοινότητα.</p>
+    </article>
+
+    <article class="update-card">
+      <h3>🎯 Unstable Exotic Όπλα</h3>
+      <p>Τρία νέα μυθικά όπλα είναι διαθέσιμα: Yoink Shotgun και άλλα, μέσω Hero Caches και Overlord Spires.</p>
+    </article>
   </section>
 
-  <section>
-    <h2>📈 Μεταβολές XP & Leveling</h2>
-    <p>Μάθε πώς να κερδίζεις XP γρηγορότερα και να ανεβαίνεις level πιο αποτελεσματικά.</p>
-    <a href="#">Δες περισσότερα</a>
+  <section id="beginner-guide">
+    <h2 class="section-title">💡 Οδηγός για Αρχάριους</h2>
+    <p>Μάθε τα βασικά του Fortnite αν ξεκινάς τώρα. Από loot μέχρι building και μάχες.</p>
+    <p><a href="#">Διάβασε τον οδηγό</a></p>
   </section>
 
-  <section>
-    <h2>💥 Top 10 Εντυπωσιακές Μάχες</h2>
-    <p>Οι πιο απίθανες μάχες που έχουν καταγραφεί από την κοινότητά μας.</p>
-    <a href="#">Δες το Top 10</a>
+  <section id="xp-leveling">
+    <h2 class="section-title">📈 XP & Leveling</h2>
+    <p>Οδηγίες για γρήγορη πρόοδο, daily & weekly quests και bonus XP.</p>
+    <p><a href="#">Μάθε τα πάντα για το leveling</a></p>
   </section>
 
-  <section>
-    <h2>📬 Επικοινωνία</h2>
-    <p>📧 Email: <a href="mailto:info.fortnitenewsgr@gmail.com">info.fortnitenewsgr@gmail.com</a><br>
-       📸 Instagram: <a href="https://instagram.com/fortnitenewsgr_" target="_blank">@fortnitenewsgr_</a></p>
+  <section id="top-battles">
+    <h2 class="section-title">💥 Top 10 Εντυπωσιακές Μάχες</h2>
+    <p>Οι πιο εντυπωσιακές μάχες που κατέγραψε η κοινότητά μας. Replay videos και σχόλια.</p>
+    <p><a href="#">Δες τα Top 10 Replays</a></p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">📬 Επικοινωνία</h2>
+    <p>Στείλε μας email για συνεργασίες, feedback ή προτάσεις:</p>
+    <p><a href="mailto:fortnitenewsgr@gmail.com">fortnitenewsgr@gmail.com</a></p>
   </section>
 
   <footer>
-    Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games<br>
-    © 2025 Fortnite News GR
+    Fan-made ιστοσελίδα για το Fortnite GR. Δεν συνδέεται με την Epic Games.
   </footer>
 
 </body>
