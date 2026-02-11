@@ -1,160 +1,194 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fortnite News GR</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0e0e0e;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #1e1e1e;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #00ffff;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 1.8em;
-      margin-top: 30px;
-      color: #ffcc00;
-    }
-    section {
-      padding: 20px;
-    }
-    .card {
-      background-color: #1a1a1a;
-      margin: 15px auto;
-      padding: 15px;
-      border-radius: 8px;
-      max-width: 800px;
-      box-shadow: 0 0 10px #00ffff22;
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-      border-radius: 10px;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
-    }
-    a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background-color: #1e1e1e;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fortnite News GR - Dark Modern</title>
+<style>
+  /* --- ΒΑΣΙΚΟ STYLING --- */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0c10;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  /* --- HEADER --- */
+  header {
+    background: linear-gradient(90deg, #1f1c2c, #928dab);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #00eaff;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #00ffff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  header p {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+
+  /* --- NAVIGATION --- */
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #111;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: #00eaff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    background: #0f3460;
+  }
+
+  /* --- SECTIONS --- */
+  section {
+    padding: 40px 20px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #ffcc00;
+    text-shadow: 0 0 6px #ffcc00;
+  }
+
+  /* --- CARDS --- */
+  .card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 850px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px #00eaff33;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card img, .card iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  /* --- BUTTONS --- */
+  .button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #00eaff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .button:hover {
+    background: #00bcd4;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: #111;
+    color: #aaa;
+    margin-top: 40px;
+  }
+
+  /* --- RESPONSIVE --- */
+  @media(max-width: 768px){
+    header h1 { font-size: 2.2rem; }
+    nav { gap: 8px; }
+    .section-title { font-size: 1.7rem; }
+  }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Καλώς ήρθατε στο Fortnite News GR</h1>
-  </header>
+<header>
+  <h1>FORTNITE NEWS GR</h1>
+  <p>Τελευταία Νέα & Patch Notes v39.40 - Dark Modern Theme</p>
+</header>
 
-  <!-- Latest Trailer -->
-  <section id="trailer">
-    <h2 class="section-title">▶️ Fortnite Chapter 6 Season 3 Trailer</h2>
-    <div class="card">
-      <iframe
-        src="https://www.youtube.com/embed/fBV0iFllYL0"
-        title="Fortnite Chapter 6 Season 3 Trailer"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
+<nav>
+  <a href="#update">Update</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#videos">Videos</a>
+  <a href="#tips">Tips</a>
+  <a href="#contact">Επικοινωνία</a>
+</nav>
 
-  <!-- New Skins -->
-  <section id="skins">
-    <h2 class="section-title">✨ Νέα Skins & Emotes</h2>
-    <div class="card">
-      <img src="https://cdn2.unrealengine.com/Fortnite-Skins-Season-6-1920x1080-1920x1080-2.jpg" alt="Fortnite New Skins">
-      <p>Ανακάλυψε τα πιο πρόσφατα skins και emotes του Chapter 6 Season 3.</p>
-      <a href="https://www.fortnite.com/news">Δες όλα τα skins</a>
-    </div>
-  </section>
+<!-- Latest Update -->
+<section id="update">
+  <h2 class="section-title">🆕 Fortnite Update v39.40</h2>
+  <div class="card">
+    <p>Η τελευταία ενημέρωση <strong>v39.40</strong> (5 Φεβρουαρίου 2026) φέρνει το <strong>Valentine’s Day Event</strong>, συνεργασίες όπως <strong>K‑Pop Demon Hunters</strong> και <strong>Marvel Rivals</strong>, νέα skins, cosmetics και σημαντικές gameplay αλλαγές.</p>
+    <a class="button" href="https://www.fortnite.com/news" target="_blank">Δες τα επίσημα Patch Notes</a>
+  </div>
+</section>
 
-  <!-- Weapons -->
-  <section id="weapons">
-    <h2 class="section-title">🔫 Νέα Όπλα</h2>
-    <div class="card">
-      <img src="https://cdn2.unrealengine.com/Fortnite-Weapon-Update-1920x1080-1920x1080-2.jpg" alt="New Weapons Fortnite">
-      <p>Όλα τα νέα όπλα του Season 3 και πώς να τα χρησιμοποιήσεις αποτελεσματικά.</p>
-      <a href="https://fortnite.fandom.com/wiki/Weapons">Πλήρης λίστα όπλων</a>
-    </div>
-  </section>
+<!-- Gallery -->
+<section id="gallery">
+  <h2 class="section-title">📸 Νέα Skins & Events</h2>
+  <div class="card">
+    <img src="https://cdn2.unrealengine.com/Fortnite-Valentine-Event-Skins-1920x1080-2.jpg" alt="Fortnite Skins Event">
+    <p>Νέα skins από το Valentine’s Day event και limited cosmetics στο Item Shop.</p>
+  </div>
+</section>
 
-  <!-- Patch Notes -->
-  <section id="patch-notes">
-    <h2 class="section-title">📝 Τελευταία Patch Notes</h2>
-    <div class="card">
-      <p>Όλες οι αλλαγές, ενημερώσεις και διορθώσεις του τελευταίου patch.</p>
-      <a href="https://www.fortnite.com/news">Δες όλα τα patch notes</a>
-    </div>
-  </section>
+<!-- Videos -->
+<section id="videos">
+  <h2 class="section-title">🎥 Τελευταία Videos</h2>
+  <div class="card">
+    <iframe src="https://www.youtube.com/embed/qmAUPucN-Qw" title="Fortnite 39.40 Update Highlights" allowfullscreen></iframe>
+    <p>Highlights του v39.40 update.</p>
+  </div>
+  <div class="card">
+    <iframe src="https://www.youtube.com/embed/JMEecvYQ9ag" title="Fortnite v39.40 Patch Notes - Save the World" allowfullscreen></iframe>
+    <p>Αναλυτικό patch notes video για το update 39.40 (Save the World).</p>
+  </div>
+</section>
 
-  <!-- Strategies -->
-  <section id="strategies">
-    <h2 class="section-title">🎯 Στρατηγικές</h2>
-    <div class="card">
-      <p>Συμβουλές για solos, squads και arena gameplay ώστε να φτάνεις πιο εύκολα στη νίκη.</p>
-      <a href="https://fortnite.fandom.com/wiki/Gameplay_tips">Δες περισσότερες στρατηγικές</a>
-    </div>
-  </section>
+<!-- Tips Section -->
+<section id="tips">
+  <h2 class="section-title">🎯 Συμβουλές & Guides</h2>
+  <div class="card">
+    <p>Μάθε πώς να εκμεταλλεύεσαι τα νέα items και mechanics στο Battle Royale.</p>
+    <a class="button" href="https://fortnite.fandom.com/wiki/Fortnite_Tips" target="_blank">Δες Guides & Tips</a>
+  </div>
+</section>
 
-  <!-- Top Battles -->
-  <section id="battles">
-    <h2 class="section-title">💥 Top 10 Εντυπωσιακές Μάχες</h2>
-    <div class="card">
-      <iframe
-        src="https://www.youtube.com/embed/4xhZ2vYxXKQ"
-        title="Top 10 Fortnite Battles"
-        allowfullscreen>
-      </iframe>
-      <p>Οι πιο εντυπωσιακές μάχες που έχουν καταγραφεί από την κοινότητα.</p>
-    </div>
-  </section>
+<!-- Contact -->
+<section id="contact">
+  <h2 class="section-title">📬 Επικοινωνία</h2>
+  <div class="card">
+    <p>Στείλε μας email για προτάσεις ή συνεργασίες στην ομάδα.</p>
+    <a class="button" href="mailto:info.fortnitenewsgr@gmail.com">Στείλε Email</a>
+  </div>
+</section>
 
-  <!-- Fun Facts -->
-  <section id="fun-facts">
-    <h2 class="section-title">🎉 Fun Facts</h2>
-    <div class="card">
-      <p>Γνώριζες ότι το Fortnite έχει πάνω από 500 διαφορετικά emotes; Μάθε περισσότερα trivia εδώ!</p>
-      <a href="https://fortnite-archive.fandom.com/wiki/Fortnite_Facts">Δες περισσότερα Fun Facts</a>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2 class="section-title">📬 Επικοινωνία</h2>
-    <div class="card">
-      <p>Στείλε μας email στο <a href="mailto:info.fortnitenewsgr@gmail.com">info.fortnitenewsgr@gmail.com</a></p>
-    </div>
-  </section>
-
-  <footer>
-    Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games
-  </footer>
+<footer>
+  Fortnite News GR — Dark Modern Edition | v39.40 Update
+</footer>
 
 </body>
 </html>
