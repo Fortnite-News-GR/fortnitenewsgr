@@ -3,191 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fortnite News GR - Dark Modern</title>
+<title>Fortnite News GR - Ultimate Fan-made</title>
 <style>
-  /* --- ΒΑΣΙΚΟ STYLING --- */
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0b0c10;
-    color: #fff;
-    line-height: 1.6;
-  }
-
-  /* --- HEADER --- */
-  header {
-    background: linear-gradient(90deg, #1f1c2c, #928dab);
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 4px solid #00eaff;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 3rem;
-    color: #00ffff;
-    letter-spacing: 1px;
-    text-shadow: 0 0 10px #00ffff;
-  }
-  header p {
-    color: #ffcc00;
-    font-size: 1.2rem;
-    margin-top: 8px;
-  }
-
-  /* --- NAVIGATION --- */
-  nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    background-color: #111;
-    padding: 12px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  nav a {
-    color: #00eaff;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: 0.3s;
-  }
-  nav a:hover {
-    background: #0f3460;
-  }
-
-  /* --- SECTIONS --- */
-  section {
-    padding: 40px 20px;
-  }
-  .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-    color: #ffcc00;
-    text-shadow: 0 0 6px #ffcc00;
-  }
-
-  /* --- CARDS --- */
-  .card {
-    background: #1c1c1c;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 850px;
-    margin: 20px auto;
-    box-shadow: 0 0 15px #00eaff33;
-    transition: transform 0.3s;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  .card img, .card iframe {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-
-  /* --- BUTTONS --- */
-  .button {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 10px 18px;
-    background: #00eaff;
-    color: #000;
-    font-weight: bold;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  .button:hover {
-    background: #00bcd4;
-  }
-
-  /* --- FOOTER --- */
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    background-color: #111;
-    color: #aaa;
-    margin-top: 40px;
-  }
-
-  /* --- RESPONSIVE --- */
-  @media(max-width: 768px){
-    header h1 { font-size: 2.2rem; }
-    nav { gap: 8px; }
-    .section-title { font-size: 1.7rem; }
-  }
+  body { margin:0; font-family:'Segoe UI', sans-serif; background:#0c0c0c; color:#fff; line-height:1.6; }
+  header { background: linear-gradient(135deg,#0f0c29,#302b63,#24243e); text-align:center; padding:60px 20px; border-bottom:4px solid #00ffff;}
+  header h1 { margin:0; font-size:3.4rem; color:#00ffff; text-shadow:0 0 15px #00ffff; }
+  header p { color:#ffcc00; font-size:1.3rem; margin-top:10px; }
+  nav { display:flex; justify-content:center; flex-wrap:wrap; gap:15px; background:#111; padding:12px 0; position:sticky; top:0; z-index:100;}
+  nav a { color:#00eaff; text-decoration:none; padding:10px 16px; border-radius:6px; font-weight:bold; transition:0.3s;}
+  nav a:hover { background:#0f3460;}
+  section { padding:60px 20px;}
+  .section-title { text-align:center; font-size:2.4rem; margin-bottom:40px; color:#ffcc00; text-shadow:0 0 8px #ffcc00;}
+  .card { background:linear-gradient(145deg,#1a1a1a,#222222); border-radius:14px; padding:30px; max-width:950px; margin:25px auto; box-shadow:0 0 20px #00eaff44; transition: transform 0.3s, box-shadow 0.3s;}
+  .card:hover { transform:translateY(-7px); box-shadow:0 0 30px #00ffff77;}
+  .card iframe { width:100%; border-radius:12px; margin-top:15px;}
+  .button { display:inline-block; margin-top:15px; padding:12px 20px; background:#00eaff; color:#000; font-weight:bold; border-radius:8px; text-decoration:none; transition:0.3s;}
+  .button:hover { background:#00bcd4;}
+  footer { text-align:center; padding:25px; font-size:0.9rem; background:#111; color:#aaa; margin-top:40px;}
+  @media(max-width:768px){ header h1{font-size:2.6rem;} nav{gap:8px;} .section-title{font-size:2rem;} }
 </style>
 </head>
 <body>
 
 <header>
   <h1>FORTNITE NEWS GR</h1>
-  <p>Τελευταία Νέα & Patch Notes v39.40 - Dark Modern Theme</p>
+  <p>Ultimate Next-Level Fan-made Dark Website | v39.40 Update</p>
 </header>
 
 <nav>
   <a href="#update">Update</a>
-  <a href="#gallery">Gallery</a>
   <a href="#videos">Videos</a>
-  <a href="#tips">Tips</a>
-  <a href="#contact">Επικοινωνία</a>
+  <a href="#skins">Skins</a>
+  <a href="#guides">Guides</a>
+  <a href="#funfacts">Fun Facts</a>
+  <a href="#battles">Top Battles</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <!-- Latest Update -->
 <section id="update">
   <h2 class="section-title">🆕 Fortnite Update v39.40</h2>
   <div class="card">
-    <p>Η τελευταία ενημέρωση <strong>v39.40</strong> (5 Φεβρουαρίου 2026) φέρνει το <strong>Valentine’s Day Event</strong>, συνεργασίες όπως <strong>K‑Pop Demon Hunters</strong> και <strong>Marvel Rivals</strong>, νέα skins, cosmetics και σημαντικές gameplay αλλαγές.</p>
-    <a class="button" href="https://www.fortnite.com/news" target="_blank">Δες τα επίσημα Patch Notes</a>
+    <p>Η τελευταία ενημέρωση <strong>v39.40</strong> (5 Φεβρουαρίου 2026) φέρνει εκατομμύρια νέα πράγματα: Valentine’s Day Event, συνεργασίες όπως K-Pop Demon Hunters Wave 2 και Marvel Rivals, νέα skins, cosmetics, νέα mechanics και πολλές gameplay αλλαγές.</p>
+    <a class="button" href="https://www.fortnite.com/news" target="_blank">Δες επίσημα Patch Notes</a>
   </div>
 </section>
 
-<!-- Gallery -->
-<section id="gallery">
-  <h2 class="section-title">📸 Νέα Skins & Events</h2>
-  <div class="card">
-    <img src="https://cdn2.unrealengine.com/Fortnite-Valentine-Event-Skins-1920x1080-2.jpg" alt="Fortnite Skins Event">
-    <p>Νέα skins από το Valentine’s Day event και limited cosmetics στο Item Shop.</p>
-  </div>
-</section>
-
-<!-- Videos -->
+<!-- Videos Section -->
 <section id="videos">
-  <h2 class="section-title">🎥 Τελευταία Videos</h2>
+  <h2 class="section-title">🎥 Νέα Videos</h2>
   <div class="card">
     <iframe src="https://www.youtube.com/embed/qmAUPucN-Qw" title="Fortnite 39.40 Update Highlights" allowfullscreen></iframe>
-    <p>Highlights του v39.40 update.</p>
+    <p>Highlights του v39.40 update με όλα τα νέα features.</p>
   </div>
   <div class="card">
-    <iframe src="https://www.youtube.com/embed/JMEecvYQ9ag" title="Fortnite v39.40 Patch Notes - Save the World" allowfullscreen></iframe>
-    <p>Αναλυτικό patch notes video για το update 39.40 (Save the World).</p>
+    <iframe src="https://www.youtube.com/embed/JMEecvYQ9ag" title="Fortnite Patch Notes Video" allowfullscreen></iframe>
+    <p>Αναλυτικό patch notes video για το update.</p>
   </div>
 </section>
 
-<!-- Tips Section -->
-<section id="tips">
-  <h2 class="section-title">🎯 Συμβουλές & Guides</h2>
+<!-- Skins Section -->
+<section id="skins">
+  <h2 class="section-title">🎭 Νέα Skins & Events</h2>
   <div class="card">
-    <p>Μάθε πώς να εκμεταλλεύεσαι τα νέα items και mechanics στο Battle Royale.</p>
+    <p>Δες όλα τα νέα skins από τα events, cosmetics και περιορισμένα αντικείμενα του v39.40 update.</p>
+  </div>
+</section>
+
+<!-- Guides Section -->
+<section id="guides">
+  <h2 class="section-title">🎯 Guides & Tips</h2>
+  <div class="card">
+    <p>Μάθε πώς να χρησιμοποιείς τα νέα items, weapons και mechanics στο Battle Royale.</p>
     <a class="button" href="https://fortnite.fandom.com/wiki/Fortnite_Tips" target="_blank">Δες Guides & Tips</a>
   </div>
 </section>
 
-<!-- Contact -->
+<!-- Fun Facts Section -->
+<section id="funfacts">
+  <h2 class="section-title">🎉 Fun Facts</h2>
+  <div class="card">
+    <p>Εκατομμύρια trivia και facts για skins, events, characters και mechanics στο Fortnite v39.40.</p>
+  </div>
+</section>
+
+<!-- Top Battles Section -->
+<section id="battles">
+  <h2 class="section-title">💥 Top Battles</h2>
+  <div class="card">
+    <p>Οι πιο επικές μάχες που έχουν καταγραφεί από την κοινότητα Fortnite — εκατομμύρια views!</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
 <section id="contact">
   <h2 class="section-title">📬 Επικοινωνία</h2>
   <div class="card">
-    <p>Στείλε μας email για προτάσεις ή συνεργασίες στην ομάδα.</p>
+    <p>Στείλε μας email για να προτείνεις νέα βίντεο ή guides που θέλεις να δεις στη σελίδα.</p>
     <a class="button" href="mailto:info.fortnitenewsgr@gmail.com">Στείλε Email</a>
   </div>
 </section>
 
 <footer>
-  Fortnite News GR — Dark Modern Edition | v39.40 Update
+  Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games
 </footer>
 
 </body>
