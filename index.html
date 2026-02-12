@@ -3,144 +3,285 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fortnite News GR - Ultimate Fan-made</title>
+<title>Fortnite News GR</title>
+
 <style>
-  body { margin:0; font-family:'Segoe UI', sans-serif; background:#0c0c0c; color:#fff; line-height:1.6; }
-  header { background: linear-gradient(135deg,#0f0c29,#302b63,#24243e); text-align:center; padding:60px 20px; border-bottom:4px solid #00ffff;}
-  header h1 { margin:0; font-size:3.4rem; color:#00ffff; text-shadow:0 0 15px #00ffff; }
-  header p { color:#ffcc00; font-size:1.3rem; margin-top:10px; }
-  nav { display:flex; justify-content:center; flex-wrap:wrap; gap:15px; background:#111; padding:12px 0; position:sticky; top:0; z-index:100;}
-  nav a { color:#00eaff; text-decoration:none; padding:10px 16px; border-radius:6px; font-weight:bold; transition:0.3s;}
-  nav a:hover { background:#0f3460;}
-  section { padding:60px 20px;}
-  .section-title { text-align:center; font-size:2.4rem; margin-bottom:40px; color:#ffcc00; text-shadow:0 0 8px #ffcc00;}
-  .card { background:linear-gradient(145deg,#1a1a1a,#222222); border-radius:14px; padding:30px; max-width:950px; margin:25px auto; box-shadow:0 0 20px #00eaff44; transition: transform 0.3s, box-shadow 0.3s;}
-  .card:hover { transform:translateY(-7px); box-shadow:0 0 30px #00ffff77;}
-  .card iframe { width:100%; border-radius:12px; margin-top:15px;}
-  .button { display:inline-block; margin-top:15px; padding:12px 20px; background:#00eaff; color:#000; font-weight:bold; border-radius:8px; text-decoration:none; transition:0.3s;}
-  .button:hover { background:#00bcd4;}
-  a.inline-link { color:#00eaff; text-decoration:none; transition:0.3s; }
-  a.inline-link:hover { text-decoration:underline; }
-  footer { text-align:center; padding:25px; font-size:0.9rem; background:#111; color:#aaa; margin-top:40px;}
-  .countdown { text-align:center; font-size:1.8rem; color:#ffcc00; margin-top:15px; text-shadow:0 0 6px #ffcc00;}
-  @media(max-width:768px){ header h1{font-size:2.6rem;} nav{gap:8px;} .section-title{font-size:2rem;} }
+body {
+  margin:0;
+  font-family: "Segoe UI", sans-serif;
+  background:#0c0c0c;
+  color:#ffffff;
+  line-height:1.7;
+}
+
+header {
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  text-align:center;
+  padding:70px 20px;
+  border-bottom:4px solid #00ffff;
+}
+
+header h1 {
+  margin:0;
+  font-size:3.5rem;
+  color:#00ffff;
+  text-shadow:0 0 15px #00ffff;
+}
+
+header p {
+  font-size:1.3rem;
+  color:#ffcc00;
+  margin-top:10px;
+}
+
+.countdown {
+  margin-top:20px;
+  font-size:1.8rem;
+  color:#ffcc00;
+}
+
+nav {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+  background:#111;
+  padding:14px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav a {
+  color:#00eaff;
+  text-decoration:none;
+  font-weight:bold;
+  padding:10px 16px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+nav a:hover {
+  background:#0f3460;
+}
+
+section {
+  padding:70px 20px;
+}
+
+.section-title {
+  text-align:center;
+  font-size:2.5rem;
+  color:#ffcc00;
+  margin-bottom:40px;
+}
+
+.card {
+  max-width:950px;
+  margin:25px auto;
+  padding:35px;
+  background:linear-gradient(145deg,#1a1a1a,#222);
+  border-radius:16px;
+  box-shadow:0 0 25px #00eaff44;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 0 35px #00ffff77;
+}
+
+iframe {
+  width:100%;
+  height:420px;
+  border:none;
+  border-radius:14px;
+  margin-top:20px;
+}
+
+.inline-link {
+  color:#00eaff;
+  text-decoration:none;
+}
+
+.inline-link:hover {
+  text-decoration:underline;
+}
+
+.button {
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 22px;
+  background:#00eaff;
+  color:#000;
+  font-weight:bold;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+footer {
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+  font-size:0.9rem;
+}
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>FORTNITE NEWS GR</h1>
-  <p>Ultimate Next-Level Fan-made Dark Website | v39.40 Update</p>
-  <div id="countdown" class="countdown">Loading countdown...</div>
+  <p>Next-Level Greek Fortnite Fan-Made Website</p>
+  <div id="countdown" class="countdown">Loading update countdown...</div>
 </header>
 
 <nav>
-  <a href="#update">Update</a>
+  <a href="#updates">Updates</a>
   <a href="#videos">Videos</a>
   <a href="#skins">Skins</a>
   <a href="#guides">Guides</a>
-  <a href="#funfacts">Fun Facts</a>
-  <a href="#battles">Top Battles</a>
+  <a href="#fun">Fun Facts</a>
+  <a href="#battles">Battles</a>
   <a href="#quizzes">Quizzes</a>
-  <a href="#events">Seasonal Events</a>
+  <a href="#events">Events</a>
   <a href="#stats">Stats</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- Latest Updates & Patch Notes -->
-<section id="update">
+<section id="updates">
   <h2 class="section-title">🆕 Latest Updates & Patch Notes</h2>
   <div class="card">
-    <p>Τελευταία έκδοση <a class="inline-link" href="https://www.fortnite.com/news" target="_blank">Fortnite v39.40</a></p>
+    <p>Τελευταία έκδοση:
+      <a class="inline-link" href="https://www.fortnite.com/news" target="_blank">
+        Fortnite v39.40
+      </a>
+    </p>
     <ul>
-      <li>Mini timeline με <a class="inline-link" href="https://fortnite.fandom.com/wiki/Category:Patch_Notes" target="_blank">προηγούμενα updates</a></li>
-      <li>Bullet points με όλα τα <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Items" target="_blank">new items, weapons, cosmetics, emotes</a></li>
-      <li>Προτεινόμενα <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_patch_notes" target="_blank">“top changes” για gameplay</a></li>
+      <li><a class="inline-link" href="https://fortnite.fandom.com/wiki/Category:Patch_Notes" target="_blank">Προηγούμενα Updates</a></li>
+      <li><a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Items" target="_blank">New Items, Weapons & Cosmetics</a></li>
+      <li><a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_patch_notes" target="_blank">Top Gameplay Changes</a></li>
     </ul>
   </div>
 </section>
 
-<!-- Videos -->
 <section id="videos">
-  <h2 class="section-title">🎥 Videos</h2>
+  <h2 class="section-title">🎥 Videos & Highlights</h2>
   <div class="card">
-    <iframe src="https://www.youtube.com/embed/qmAUPucN-Qw" title="Fortnite Update Highlights" allowfullscreen></iframe>
-    <p>Δες <a class="inline-link" href="https://www.youtube.com/results?search_query=fortnite+v39.40+highlights" target="_blank">highlights & patch notes videos</a>, tutorials, strategy videos, και fan-made epic plays.</p>
+    <iframe src="https://www.youtube.com/embed/qmAUPucN-Qw" allowfullscreen></iframe>
+    <p>
+      <a class="inline-link" href="https://www.youtube.com/results?search_query=fortnite+update+highlights" target="_blank">
+        Highlights • Tutorials • Event Trailers • Fan-Made Plays
+      </a>
+    </p>
   </div>
 </section>
 
-<!-- Skins & Cosmetics -->
 <section id="skins">
   <h2 class="section-title">🎭 Skins & Cosmetics</h2>
   <div class="card">
-    <p>Δες Legendary, Epic και Rare skins, <a class="inline-link" href="https://fortnite.fandom.com/wiki/Category:Skins" target="_blank">seasonal events</a>, limited και fan-favorite skins, με hover-over info για κάθε skin.</p>
+    <p>
+      Legendary, Epic & Rare Skins • Limited Events • Fan Favorites  
+      <a class="inline-link" href="https://fortnite.fandom.com/wiki/Category:Skins" target="_blank">
+        Δες όλα τα Skins
+      </a>
+    </p>
   </div>
 </section>
 
-<!-- Guides & Tips -->
 <section id="guides">
   <h2 class="section-title">🎯 Guides & Tips</h2>
   <div class="card">
-    <p>Μάθε <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Strategies" target="_blank">Solo / Squad / Arena strategies</a>, best weapons & loadouts, building & editing tricks και tips για quests & challenges.</p>
+    <p>
+      <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Strategies" target="_blank">
+        Solo / Squad / Arena Strategies
+      </a>,
+      Loadouts, Building, Editing & Quests.
+    </p>
   </div>
 </section>
 
-<!-- Fun Facts / Trivia -->
-<section id="funfacts">
-  <h2 class="section-title">🎉 Fun Facts / Trivia / Easter Eggs</h2>
+<section id="fun">
+  <h2 class="section-title">🎉 Fun Facts & Easter Eggs</h2>
   <div class="card">
-    <p>Trivia για χαρακτήρες, skins, dances, hidden Easter Eggs στο χάρτη, και statistics για rare skins & emotes. Δες περισσότερα <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Facts" target="_blank">εδώ</a>.</p>
+    <p>
+      Trivia, hidden Easter Eggs & rare statistics  
+      <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Facts" target="_blank">
+        Δες περισσότερα
+      </a>
+    </p>
   </div>
 </section>
 
-<!-- Top Battles -->
 <section id="battles">
-  <h2 class="section-title">💥 Top Battles / Epic Plays</h2>
+  <h2 class="section-title">💥 Top Battles & Epic Plays</h2>
   <div class="card">
-    <p>Embedded videos με Rankings: most epic eliminations, wins, build battles και “Battle of the Week”. Δες τα <a class="inline-link" href="https://www.youtube.com/results?search_query=fortnite+epic+battles" target="_blank">εδώ</a>.</p>
+    <iframe src="https://www.youtube.com/embed/2dQZ1WJ6a0k" allowfullscreen></iframe>
+    <p>
+      <a class="inline-link" href="https://www.youtube.com/results?search_query=fortnite+epic+battles" target="_blank">
+        Most Epic Eliminations • Build Battles • Battle of the Week
+      </a>
+    </p>
   </div>
 </section>
 
-<!-- Quizzes / Polls / Community -->
 <section id="quizzes">
-  <h2 class="section-title">❓ Quizzes / Polls / Community</h2>
+  <h2 class="section-title">❓ Fortnite Quizzes</h2>
   <div class="card">
-    <p>Δοκίμασε τα παρακάτω <strong>Fortnite trivia quizzes</strong>:  
-      <a class="inline-link" href="https://fortnitequiz.com/quiz1" target="_blank">Quiz 1</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz2" target="_blank">Quiz 2</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz3" target="_blank">Quiz 3</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz4" target="_blank">Quiz 4</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz5" target="_blank">Quiz 5</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz6" target="_blank">Quiz 6</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz7" target="_blank">Quiz 7</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz8" target="_blank">Quiz 8</a>, 
-      <a class="inline-link" href="https://fortnitequiz.com/quiz9" target="_blank">Quiz 9</a>, 
+    <p>
+      <a class="inline-link" href="https://fortnitequiz.com/quiz1" target="_blank">Quiz 1</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz2" target="_blank">Quiz 2</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz3" target="_blank">Quiz 3</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz4" target="_blank">Quiz 4</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz5" target="_blank">Quiz 5</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz6" target="_blank">Quiz 6</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz7" target="_blank">Quiz 7</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz8" target="_blank">Quiz 8</a> |
+      <a class="inline-link" href="https://fortnitequiz.com/quiz9" target="_blank">Quiz 9</a> |
       <a class="inline-link" href="https://fortnitequiz.com/quiz10" target="_blank">Quiz 10</a>
     </p>
   </div>
 </section>
 
-<!-- Seasonal Events & Challenges -->
 <section id="events">
-  <h2 class="section-title">🎊 Seasonal Events & Challenges</h2>
+  <h2 class="section-title">🎊 Seasonal Events</h2>
   <div class="card">
-    <p>Upcoming events countdown, event-exclusive cosmetics, step-by-step event guides. Δες περισσότερα <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Events" target="_blank">εδώ</a>.</p>
+    <p>
+      Upcoming Events • Event Cosmetics • Guides  
+      <a class="inline-link" href="https://fortnite.fandom.com/wiki/Fortnite_Events" target="_blank">
+        Δες Events
+      </a>
+    </p>
   </div>
 </section>
 
-<!-- Stats & Leaderboards -->
 <section id="stats">
   <h2 class="section-title">📈 Stats & Leaderboards</h2>
   <div class="card">
-    <p>XP & leveling tracking, tournament leaderboards, player stats / most-played modes. Δες <a class="inline-link" href="https://fortnite.fandom.com/wiki/Category:Statistics" target="_blank">εδώ</a>.</p>
+    <p>
+      XP Tracking • Player Stats • Tournaments  
+      <a class="inline-link" href="https://fortnite.fandom.com/wiki/Category:Statistics" target="_blank">
+        Δες Stats
+      </a>
+    </p>
   </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
   <h2 class="section-title">📬 Contact</h2>
   <div class="card">
-    <p>Στείλε μας email για να προτείνεις νέα videos, guides. Θέματα που θέλεις να δεις στη σελίδα ή για να μπεις στην ομάδα μας.</p>
+    <p>
+      Στείλε μας email για να προτείνεις νέα videos, guides,
+      θέματα που θέλεις να δεις στη σελίδα ή για να μπεις στην ομάδα μας.
+    </p>
+    <p>
+      📸 Instagram:
+      <a class="inline-link" href="https://www.instagram.com/fortnitenewsgr_official/" target="_blank">
+        @fortnitenewsgr_official
+      </a><br>
+      📩 DM για συνεργασίες.
+    </p>
     <a class="button" href="mailto:info.fortnitenewsgr@gmail.com">Στείλε Email</a>
   </div>
 </section>
@@ -150,24 +291,25 @@
 </footer>
 
 <script>
-  // Countdown Timer για το επόμενο update
-  const countdownElement = document.getElementById('countdown');
-  const updateDate = new Date('March 1, 2026 12:00:00').getTime(); // πχ το επόμενο update
-  const countdown = () => {
-    const now = new Date().getTime();
-    const distance = updateDate - now;
-    if(distance < 0){
-      countdownElement.innerHTML = "Το νέο update είναι εδώ!";
-      clearInterval(interval);
-      return;
-    }
-    const days = Math.floor(distance / (1000*60*60*24));
-    const hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-    const minutes = Math.floor((distance % (1000*60*60))/(1000*60));
-    const seconds = Math.floor((distance % (1000*60))/1000);
-    countdownElement.innerHTML = `Next Update in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-  };
-  const interval = setInterval(countdown, 1000);
+const countdownElement = document.getElementById("countdown");
+const updateDate = new Date("March 1, 2026 12:00:00").getTime();
+
+setInterval(() => {
+  const now = new Date().getTime();
+  const distance = updateDate - now;
+
+  if (distance < 0) {
+    countdownElement.innerHTML = "Το νέο update είναι εδώ!";
+    return;
+  }
+
+  const d = Math.floor(distance / (1000*60*60*24));
+  const h = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+  const m = Math.floor((distance % (1000*60*60))/(1000*60));
+  const s = Math.floor((distance % (1000*60))/1000);
+
+  countdownElement.innerHTML = `Next Update in: ${d}d ${h}h ${m}m ${s}s`;
+}, 1000);
 </script>
 
 </body>
