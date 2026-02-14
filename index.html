@@ -1,201 +1,180 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fortnite News GR</title>
+  <meta charset="UTF-8">
+  <title>Fortnite News GR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#0b0b0f;
-  color:#ffffff;
-  line-height:1.7;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0d12;
+      color: #eaeaea;
+    }
 
-header{
-  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  padding:70px 20px;
-  text-align:center;
-}
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #111827, #020617);
+      border-bottom: 1px solid #1f2933;
+    }
 
-header h1{
-  font-size:3.5rem;
-  margin:0;
-  color:#00ffff;
-  text-shadow:0 0 20px #00ffff;
-}
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #38bdf8;
+      letter-spacing: 1px;
+    }
 
-header p{
-  font-size:1.3rem;
-  color:#ffcc00;
-}
+    header p {
+      margin-top: 10px;
+      color: #9ca3af;
+      font-size: 1.1em;
+    }
 
-nav{
-  position:sticky;
-  top:0;
-  background:#111;
-  padding:12px;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:12px;
-  z-index:100;
-}
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-nav a{
-  color:#00eaff;
-  text-decoration:none;
-  font-weight:bold;
-  padding:8px 14px;
-  border-radius:6px;
-}
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 25px;
+      color: #facc15;
+    }
 
-nav a:hover{
-  background:#00eaff;
-  color:#000;
-}
+    .card {
+      background: #020617;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 25px rgba(56,189,248,0.08);
+    }
 
-section{
-  padding:80px 20px;
-}
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
 
-.section-title{
-  text-align:center;
-  font-size:2.4rem;
-  color:#ffcc00;
-  margin-bottom:40px;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-.card{
-  max-width:1000px;
-  margin:30px auto;
-  padding:35px;
-  background:linear-gradient(145deg,#1a1a1a,#222);
-  border-radius:18px;
-  box-shadow:0 0 30px #00ffff44;
-}
+    ul {
+      padding-left: 20px;
+    }
 
-iframe{
-  width:100%;
-  height:430px;
-  border:none;
-  border-radius:14px;
-  margin-top:20px;
-}
+    li {
+      margin-bottom: 10px;
+    }
 
-a.inline{
-  color:#00eaff;
-  text-decoration:none;
-}
-
-a.inline:hover{
-  text-decoration:underline;
-}
-
-footer{
-  background:#111;
-  text-align:center;
-  padding:25px;
-  color:#aaa;
-  font-size:0.9rem;
-}
-</style>
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background: #020617;
+      border-top: 1px solid #1f2937;
+      color: #9ca3af;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>FORTNITE NEWS GR</h1>
-  <p>Το απόλυτο ελληνικό fan-made Fortnite hub</p>
+  <h1>Fortnite News GR</h1>
+  <p>Next-Gen Fortnite News • Updates • Quizzes • Epic Battles</p>
 </header>
 
-<nav>
-  <a href="#updates">Updates</a>
-  <a href="#videos">Videos</a>
-  <a href="#guides">Guides</a>
-  <a href="#battles">Battles</a>
-  <a href="#quizzes">Quizzes</a>
-  <a href="#events">Events</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="updates">
+<section>
   <h2 class="section-title">🆕 Latest Updates & Patch Notes</h2>
   <div class="card">
-    <p>Τελευταία έκδοση Fortnite: <strong>v39.40</strong></p>
+    <p><strong>Τελευταία έκδοση:</strong> Fortnite v39.40</p>
     <ul>
-      <li><a class="inline" href="https://www.fortnite.com/news" target="_blank">Επίσημα Patch Notes</a></li>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Weapons" target="_blank">Νέα Όπλα & Items</a></li>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Skins" target="_blank">Νέα Skins & Cosmetics</a></li>
+      <li>Νέα weapons & balance changes</li>
+      <li>Νέα cosmetics & emotes</li>
+      <li>Gameplay βελτιώσεις</li>
+      <li>Bug fixes & performance updates</li>
     </ul>
-  </div>
-</section>
-
-<section id="videos">
-  <h2 class="section-title">🎥 Latest Fortnite Videos</h2>
-  <div class="card">
-    <iframe src="https://www.youtube.com/embed/9nZsXz1g6Gg" allowfullscreen></iframe>
     <p>
-      <a class="inline" href="https://www.youtube.com/results?search_query=fortnite+update+highlights" target="_blank">
-        Highlights • Tutorials • Strategy Videos • Event Trailers
+      Επίσημα Patch Notes:
+      <a href="https://www.fortnite.com/news" target="_blank">
+        fortnite.com/news
       </a>
     </p>
   </div>
 </section>
 
-<section id="guides">
-  <h2 class="section-title">🎯 Guides & Tips</h2>
+<section>
+  <h2 class="section-title">🧠 Fortnite Quizzes</h2>
   <div class="card">
+    <p>Δοκίμασε τις γνώσεις σου με αληθινά Fortnite quizzes:</p>
     <ul>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Strategies" target="_blank">Solo / Squad / Arena Guides</a></li>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Weapons" target="_blank">Best Weapons & Loadouts</a></li>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Building" target="_blank">Building & Editing Tricks</a></li>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Quests" target="_blank">Quest & Challenge Tips</a></li>
+      <li>
+        <a href="https://www.beano.com/quiz/gaming/fortnite-collaboration-and-event-quiz" target="_blank">
+          Fortnite Collaboration & Event Quiz
+        </a>
+      </li>
+      <li>
+        <a href="https://triviacreator.com/quiz/AMfnBegQ2" target="_blank">
+          Fortnite Trivia Quiz (General Knowledge)
+        </a>
+      </li>
+      <li>
+        <a href="https://triviacreator.com/quiz/1kEdGUY4N" target="_blank">
+          Fortnite Trivia Quiz (GIF Edition)
+        </a>
+      </li>
+      <li>
+        <a href="https://triviacreator.com/quiz/VMdkSD1_n" target="_blank">
+          Fortnite Quick Quiz (8 Questions)
+        </a>
+      </li>
+      <li>
+        <a href="https://onlinetoolkit.co/fortnite-quiz/" target="_blank">
+          Fortnite Ultimate Trivia Quiz
+        </a>
+      </li>
     </ul>
   </div>
 </section>
 
-<section id="battles">
-  <h2 class="section-title">💥 Top Battles & Epic Plays</h2>
+<section>
+  <h2 class="section-title">🔥 Top Battles & Epic Plays</h2>
   <div class="card">
-    <!-- ΑΛΛΑΓΜΕΝΟ VIDEO -->
-    <iframe src="https://www.youtube.com/embed/3U3wN3XJ9c0" allowfullscreen></iframe>
     <p>
-      <a class="inline" href="https://www.youtube.com/results?search_query=fortnite+epic+plays" target="_blank">
-        Most Epic Eliminations • Build Battles • Clutch Moments
-      </a>
+      Τα πιο επικά Fortnite battles από την κοινότητα.
+      Δες highlights, rankings και legendary moments:
     </p>
-  </div>
-</section>
-
-<section id="quizzes">
-  <h2 class="section-title">❓ Fortnite Quizzes & Polls</h2>
-  <div class="card">
-    <p>Δοκίμασε τις γνώσεις σου:</p>
     <ul>
-      <li><a class="inline" href="https://www.proprofs.com/quiz-school/story.php?title=fortnite-quiz" target="_blank">Fortnite Quiz #1</a></li>
-      <li><a class="inline" href="https://www.sporcle.com/games/search/quizzes/?s=fortnite" target="_blank">Fortnite Trivia (Sporcle)</a></li>
-      <li><a class="inline" href="https://www.quizexpo.com/fortnite-quiz/" target="_blank">Which Fortnite Skin Are You?</a></li>
-      <li><a class="inline" href="https://www.beano.com/posts/fortnite-quiz" target="_blank">Fun Fortnite Quiz</a></li>
-      <li><a class="inline" href="https://www.buzzfeed.com/search?q=fortnite+quiz" target="_blank">BuzzFeed Fortnite Quizzes</a></li>
+      <li>
+        <a href="https://www.youtube.com/results?search_query=fortnite+epic+battles" target="_blank">
+          Fortnite Epic Battles (YouTube Search)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/results?search_query=fortnite+best+plays" target="_blank">
+          Fortnite Best Plays & Eliminations
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/results?search_query=fortnite+build+battles" target="_blank">
+          Fortnite Build Battles
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/results?search_query=fortnite+clutch+moments" target="_blank">
+          Fortnite Clutch Moments
+        </a>
+      </li>
     </ul>
   </div>
 </section>
 
-<section id="events">
-  <h2 class="section-title">🎉 Events & Challenges</h2>
-  <div class="card">
-    <ul>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Fortnite_Events" target="_blank">Upcoming Fortnite Events</a></li>
-      <li><a class="inline" href="https://fortnite.fandom.com/wiki/Challenges" target="_blank">Event Challenges Guides</a></li>
-      <li><a class="inline" href="https://www.fortnite.com/competitive" target="_blank">Tournaments & Competitive</a></li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact">
+<section>
   <h2 class="section-title">📬 Contact</h2>
   <div class="card">
     <p>
@@ -203,18 +182,26 @@ footer{
       θέματα που θέλεις να δεις στη σελίδα ή για να μπεις στην ομάδα μας.
     </p>
     <p>
-      Instagram:
-      <a class="inline" href="https://www.instagram.com/fortnitenewsgr_official/" target="_blank">
+      📸 Instagram:
+      <a href="https://www.instagram.com/fortnitenewsgr_official/" target="_blank">
         @fortnitenewsgr_official
-      </a><br>
-      📩 DM για συνεργασίες
+      </a>
+      <br>
+      📩 DM για συνεργασίες & content ideas
     </p>
-    <p>Email: <a class="inline" href="mailto:info.fortnitenewsgr@gmail.com">info.fortnitenewsgr@gmail.com</a></p>
+    <p>
+      📧 Email:
+      <a href="mailto:info.fortnitenewsgr@gmail.com">
+        info.fortnitenewsgr@gmail.com
+      </a>
+    </p>
   </div>
 </section>
 
 <footer>
-  Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games
+  Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games  
+  <br>
+  © 2025 Fortnite News GR
 </footer>
 
 </body>
