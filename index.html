@@ -10,14 +10,14 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: #0b0d12;
-      color: #eaeaea;
+      color: #e5e7eb;
     }
 
     header {
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #111827, #020617);
-      border-bottom: 1px solid #1f2933;
+      background: linear-gradient(135deg, #020617, #111827);
+      border-bottom: 1px solid #1f2937;
     }
 
     header h1 {
@@ -28,7 +28,7 @@
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 12px;
       color: #9ca3af;
       font-size: 1.1em;
     }
@@ -48,10 +48,18 @@
     .card {
       background: #020617;
       border: 1px solid #1f2937;
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 25px;
-      box-shadow: 0 0 25px rgba(56,189,248,0.08);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 30px rgba(56,189,248,0.08);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
 
     a {
@@ -63,12 +71,23 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 20px;
+    .email-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: #ffffff;
+      font-size: 1.1em;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 0 18px rgba(56,189,248,0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    li {
-      margin-bottom: 10px;
+    .email-btn:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 30px rgba(56,189,248,0.8);
     }
 
     footer {
@@ -86,19 +105,22 @@
 
 <header>
   <h1>Fortnite News GR</h1>
-  <p>Next-Gen Fortnite News • Updates • Quizzes • Epic Battles</p>
+  <p>Latest Fortnite Updates • Quizzes • Epic Moments</p>
 </header>
 
 <section>
   <h2 class="section-title">🆕 Latest Updates & Patch Notes</h2>
   <div class="card">
-    <p><strong>Τελευταία έκδοση:</strong> Fortnite v39.40</p>
+    <p><strong>Τελευταία ενημέρωση:</strong> <b>v39.50</b></p>
+    <p><strong>Ημερομηνία:</strong> 19/2/2026</p>
+
     <ul>
-      <li>Νέα weapons & balance changes</li>
-      <li>Νέα cosmetics & emotes</li>
-      <li>Gameplay βελτιώσεις</li>
-      <li>Bug fixes & performance updates</li>
+      <li>Νέα αντικείμενα και balance changes</li>
+      <li>Νέα cosmetics και emotes</li>
+      <li>Βελτιώσεις gameplay</li>
+      <li>Bug fixes και performance updates</li>
     </ul>
+
     <p>
       Επίσημα Patch Notes:
       <a href="https://www.fortnite.com/news" target="_blank">
@@ -111,33 +133,11 @@
 <section>
   <h2 class="section-title">🧠 Fortnite Quizzes</h2>
   <div class="card">
-    <p>Δοκίμασε τις γνώσεις σου με αληθινά Fortnite quizzes:</p>
     <ul>
-      <li>
-        <a href="https://www.beano.com/quiz/gaming/fortnite-collaboration-and-event-quiz" target="_blank">
-          Fortnite Collaboration & Event Quiz
-        </a>
-      </li>
-      <li>
-        <a href="https://triviacreator.com/quiz/AMfnBegQ2" target="_blank">
-          Fortnite Trivia Quiz (General Knowledge)
-        </a>
-      </li>
-      <li>
-        <a href="https://triviacreator.com/quiz/1kEdGUY4N" target="_blank">
-          Fortnite Trivia Quiz (GIF Edition)
-        </a>
-      </li>
-      <li>
-        <a href="https://triviacreator.com/quiz/VMdkSD1_n" target="_blank">
-          Fortnite Quick Quiz (8 Questions)
-        </a>
-      </li>
-      <li>
-        <a href="https://onlinetoolkit.co/fortnite-quiz/" target="_blank">
-          Fortnite Ultimate Trivia Quiz
-        </a>
-      </li>
+      <li><a href="https://www.beano.com/quiz/gaming/fortnite-collaboration-and-event-quiz" target="_blank">Fortnite Collaboration & Event Quiz</a></li>
+      <li><a href="https://triviacreator.com/quiz/AMfnBegQ2" target="_blank">Fortnite Trivia Quiz</a></li>
+      <li><a href="https://triviacreator.com/quiz/1kEdGUY4N" target="_blank">Fortnite GIF Trivia Quiz</a></li>
+      <li><a href="https://onlinetoolkit.co/fortnite-quiz/" target="_blank">Ultimate Fortnite Quiz</a></li>
     </ul>
   </div>
 </section>
@@ -149,27 +149,12 @@
       Τα πιο επικά Fortnite battles από την κοινότητα.
       Δες highlights, rankings και legendary moments:
     </p>
+
     <ul>
-      <li>
-        <a href="https://www.youtube.com/results?search_query=fortnite+epic+battles" target="_blank">
-          Fortnite Epic Battles (YouTube Search)
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/results?search_query=fortnite+best+plays" target="_blank">
-          Fortnite Best Plays & Eliminations
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/results?search_query=fortnite+build+battles" target="_blank">
-          Fortnite Build Battles
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/results?search_query=fortnite+clutch+moments" target="_blank">
-          Fortnite Clutch Moments
-        </a>
-      </li>
+      <li><a href="https://www.youtube.com/results?search_query=fortnite+epic+battles" target="_blank">Epic Fortnite Battles</a></li>
+      <li><a href="https://www.youtube.com/results?search_query=fortnite+best+plays" target="_blank">Best Fortnite Plays</a></li>
+      <li><a href="https://www.youtube.com/results?search_query=fortnite+build+battles" target="_blank">Top Build Battles</a></li>
+      <li><a href="https://www.youtube.com/results?search_query=fortnite+clutch+moments" target="_blank">Fortnite Clutch Moments</a></li>
     </ul>
   </div>
 </section>
@@ -181,27 +166,24 @@
       Στείλε μας email για να προτείνεις νέα videos, guides,
       θέματα που θέλεις να δεις στη σελίδα ή για να μπεις στην ομάδα μας.
     </p>
+
     <p>
-      📸 Instagram:
+      Instagram:
       <a href="https://www.instagram.com/fortnitenewsgr_official/" target="_blank">
         @fortnitenewsgr_official
       </a>
       <br>
-      📩 DM για συνεργασίες & content ideas
+      DM για συνεργασίες
     </p>
-    <p>
-      📧 Email:
-      <a href="mailto:info.fortnitenewsgr@gmail.com">
-        info.fortnitenewsgr@gmail.com
-      </a>
-    </p>
+
+    <a href="mailto:info.fortnitenewsgr@gmail.com" class="email-btn">
+      📧 Στείλε Email
+    </a>
   </div>
 </section>
 
 <footer>
-  Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games  
-  <br>
-  © 2025 Fortnite News GR
+  Fan-made ιστοσελίδα για Fortnite | Δεν συνδέεται με την Epic Games
 </footer>
 
 </body>
