@@ -2,200 +2,351 @@
 <html lang="el">
 <head>
 <meta charset="UTF-8">
-<title>Fortnite Hub</title>
+<title>Fortnite News GR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0b0b0b;
-    color: #ffffff;
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0d12;
+color:#e5e7eb;
 }
 
-header {
-    background: linear-gradient(90deg, #1e90ff, #00bfff);
-    padding: 30px;
-    text-align: center;
+/* HEADER */
+
+header{
+background:#020617;
+text-align:center;
+padding:30px 20px;
+border-bottom:1px solid #1f2937;
 }
 
-nav {
-    background: #111;
-    padding: 10px;
-    text-align: center;
+header h1{
+margin:0;
+color:#38bdf8;
+font-size:2.5em;
 }
 
-nav a {
-    color: #00c3ff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+header p{
+color:#9ca3af;
+margin-top:8px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* COUNTDOWN */
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:15px;
+flex-wrap:wrap;
 }
 
-section {
-    padding: 30px;
-    border-bottom: 1px solid #222;
+.time-box{
+background:#020617;
+border:1px solid #1f2937;
+border-radius:12px;
+padding:10px 16px;
+text-align:center;
 }
 
-h2 {
-    color: #1e90ff;
+.time-box span{
+display:block;
+font-size:1.6em;
+font-weight:bold;
+color:#38bdf8;
 }
 
-.video {
-    text-align: center;
+/* SECTIONS */
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
 }
 
-iframe {
-    max-width: 100%;
-    border-radius: 10px;
+.section-title{
+color:#facc15;
+font-size:2em;
+margin-bottom:20px;
 }
 
-ul {
-    list-style: square;
+.card{
+background:#020617;
+border:1px solid #1f2937;
+border-radius:16px;
+padding:28px;
+margin-bottom:30px;
 }
 
-a {
-    color: #00c3ff;
+/* LINKS */
+
+a{
+color:#38bdf8;
+text-decoration:none;
 }
 
-footer {
-    background: #111;
-    padding: 40px;
+a:hover{
+text-decoration:underline;
 }
 
-form {
-    margin-bottom: 40px;
+/* VIDEO */
+
+iframe{
+width:100%;
+height:420px;
+border:none;
+border-radius:14px;
 }
 
-input, textarea {
-    width: 90%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 5px;
-    border: none;
+/* BUTTON */
+
+.email-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#2563eb;
+color:white;
+border-radius:14px;
+font-weight:bold;
 }
 
-button {
-    padding: 12px 30px;
-    background: #1e90ff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* LIST */
+
+ul{
+padding-left:20px;
 }
 
-button:hover, a.button:hover {
-    background: #00bfff;
+li{
+margin-bottom:8px;
 }
 
-a.button {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #1e90ff;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🔥 Fortnite Hub</h1>
-    <p>Official videos • Νέα • Skins • Fun Facts • Tips</p>
+
+<h1>Fortnite News GR</h1>
+<p>Νέα, updates, guides και epic moments από τον κόσμο του Fortnite.</p>
+
+<div class="countdown">
+
+<div class="time-box">
+<span id="days">--</span>
+Days
+</div>
+
+<div class="time-box">
+<span id="hours">--</span>
+Hours
+</div>
+
+<div class="time-box">
+<span id="minutes">--</span>
+Minutes
+</div>
+
+<div class="time-box">
+<span id="seconds">--</span>
+Seconds
+</div>
+
+</div>
+
 </header>
 
-<nav>
-    <a href="#video">Video</a>
-    <a href="#news">Νέα</a>
-    <a href="#skins">Skins</a>
-    <a href="#facts">Fun Facts</a>
-    <a href="#tips">Tips</a>
-    <a href="#comments">Σχόλια</a>
-    <a href="#contact">Επικοινωνία</a>
-</nav>
 
-<section id="video" class="video">
-    <h2>🎥 Official Fortnite Video</h2>
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/2gUtfBmw86Y"
-        title="Fortnite Official Trailer"
-        allowfullscreen>
-    </iframe>
-    <p>
-        <a href="https://www.youtube.com/@EpicGames" target="_blank">
-            Official Epic Games YouTube Channel
-        </a>
-    </p>
+<!-- UPDATE -->
+
+<section>
+
+<h2 class="section-title">🆕 Latest Fortnite Update</h2>
+
+<div class="card">
+
+<p>
+Το τελευταίο update του Fortnite είναι το <b>v39.50</b> που κυκλοφόρησε στις
+<b>19 Φεβρουαρίου 2026</b>.
+Το update έφερε αλλαγές στο gameplay, νέα cosmetics και βελτιώσεις
+στο performance του παιχνιδιού.
+</p>
+
+<p>
+Τα Fortnite updates συνήθως φέρνουν νέα όπλα, events, skins και balance changes
+που επηρεάζουν τον τρόπο παιχνιδιού.
+</p>
+
+<p>
+Δες τα επίσημα patch notes:
+</p>
+
+<a href="https://www.fortnite.com/news" target="_blank">
+fortnite.com/news
+</a>
+
+</div>
+
 </section>
 
-<section id="news">
-    <h2>📰 Νέα Fortnite</h2>
-    <ul>
-        <li><a href="https://www.fortnite.com/news" target="_blank">Official Fortnite News</a></li>
-        <li><a href="https://store.epicgames.com/en-US/news" target="_blank">Epic Games Blog</a></li>
-    </ul>
+
+<!-- VIDEO -->
+
+<section>
+
+<h2 class="section-title">🎥 Fortnite Update Video</h2>
+
+<div class="card">
+
+<p>
+Παρακάτω μπορείς να δεις ένα βίντεο με πληροφορίες και ανάλυση
+για το τελευταίο Fortnite update.
+</p>
+
+<iframe src="https://www.youtube.com/embed/glk35brBIwo"></iframe>
+
+</div>
+
 </section>
 
-<section id="skins">
-    <h2>👕 Νέα Skins</h2>
-    <ul>
-        <li><a href="https://fnbr.co" target="_blank">Item Shop & Upcoming Skins</a></li>
-        <li><a href="https://fortnite.gg/skins" target="_blank">Fortnite.gg Skins</a></li>
-    </ul>
+
+<!-- TOP BATTLES -->
+
+<section>
+
+<h2 class="section-title">🔥 Top Battles & Epic Plays</h2>
+
+<div class="card">
+
+<p>
+Η Fortnite κοινότητα δημιουργεί καθημερινά απίστευτα moments
+με epic fights, clutch plays και build battles.
+Παρακάτω μπορείς να δεις μερικά από τα πιο δημοφιλή highlights.
+</p>
+
+<ul>
+
+<li>
+<a href="https://www.youtube.com/results?search_query=fortnite+best+plays" target="_blank">
+Fortnite Best Plays
+</a>
+</li>
+
+<li>
+<a href="https://www.youtube.com/results?search_query=fortnite+build+battles" target="_blank">
+Fortnite Build Battles
+</a>
+</li>
+
+<li>
+<a href="https://www.youtube.com/results?search_query=fortnite+clutch+moments" target="_blank">
+Fortnite Clutch Moments
+</a>
+</li>
+
+</ul>
+
+</div>
+
 </section>
 
-<section id="facts">
-    <h2>🤯 Fun Facts</h2>
-    <ul>
-        <li><a href="https://fortnite.fandom.com/wiki/Fortnite_Wiki" target="_blank">Fortnite Wiki</a></li>
-        <li><a href="https://gamerant.com/tag/fortnite/" target="_blank">Fortnite Articles</a></li>
-    </ul>
+
+<!-- QUIZZES -->
+
+<section>
+
+<h2 class="section-title">🧠 Fortnite Quizzes</h2>
+
+<div class="card">
+
+<p>
+Δοκίμασε τις γνώσεις σου για το Fortnite με τα παρακάτω quizzes.
+</p>
+
+<ul>
+
+<li>
+<a href="https://www.beano.com/quiz/gaming/fortnite-collaboration-and-event-quiz" target="_blank">
+Fortnite Event Quiz
+</a>
+</li>
+
+<li>
+<a href="https://triviacreator.com/quiz/AMfnBegQ2" target="_blank">
+Fortnite Trivia Quiz
+</a>
+</li>
+
+<li>
+<a href="https://onlinetoolkit.co/fortnite-quiz/" target="_blank">
+Ultimate Fortnite Quiz
+</a>
+</li>
+
+</ul>
+
+</div>
+
 </section>
 
-<section id="tips">
-    <h2>🎯 Tips & Tricks</h2>
-    <ul>
-        <li><a href="https://www.prosettings.net/fortnite-pro-settings/" target="_blank">Pro Player Settings</a></li>
-        <li><a href="https://www.youtube.com/results?search_query=fortnite+tips" target="_blank">
-            Fortnite Tips Videos
-        </a></li>
-    </ul>
+
+<!-- CONTACT -->
+
+<section>
+
+<h2 class="section-title">📬 Επικοινωνία</h2>
+
+<div class="card">
+
+<p>
+Για προτάσεις, συνεργασίες ή απορίες μπορείς να επικοινωνήσεις μαζί μας.
+</p>
+
+<p>
+Instagram :
+<a href="https://www.instagram.com/fortnitenewsgr_official" target="_blank">
+fortnitenewsgr_official
+</a>
+</p>
+
+<a href="mailto:info.fortnitenewsgr@gmail.com" class="email-btn">
+Στείλε e-mail
+</a>
+
+</div>
+
 </section>
 
-<footer>
 
-<section id="comments">
-    <h2>🗨️ Σχόλια</h2>
-    <form>
-        <input type="text" placeholder="Όνομα" required><br>
-        <textarea rows="4" placeholder="Γράψε το σχόλιό σου..." required></textarea><br>
-        <button type="submit">Υποβολή σχολίου</button>
-    </form>
-</section>
+<script>
 
-<section id="contact">
-    <h2>📩 Επικοινωνία</h2>
-    <!-- Κουμπί mailto με κείμενο 📧 Στείλε Email -->
-    <p>
-        <a class="button" href="mailto:example@domain.com?subject=Μήνυμα%20από%20Fortnite%20Hub">
-            📧 Στείλε Email
-        </a>
-    </p>
-    <form>
-        <input type="text" placeholder="Όνομα" required><br>
-        <input type="email" placeholder="Email" required><br>
-        <textarea rows="4" placeholder="Μήνυμα..." required></textarea><br>
-    </form>
-</section>
+const nextUpdate = new Date("2026-03-20T00:00:00").getTime();
 
-</footer>
+setInterval(function(){
+
+const now = new Date().getTime();
+const diff = nextUpdate - now;
+
+if(diff <= 0) return;
+
+document.getElementById("days").innerText =
+Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("hours").innerText =
+Math.floor((diff/(1000*60*60))%24);
+
+document.getElementById("minutes").innerText =
+Math.floor((diff/(1000*60))%60);
+
+document.getElementById("seconds").innerText =
+Math.floor((diff/1000)%60);
+
+},1000);
+
+</script>
 
 </body>
 </html>
